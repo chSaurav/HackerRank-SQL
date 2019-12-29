@@ -1,0 +1,8 @@
+Asian Population
+
+
+Questions : Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+
+Solution :
+
+SELECT SUM(i.POPULATION) FROM CITY AS i JOIN COUNTRY AS o ON i.COUNTRYCODE=o.CODE WHERE o.CONTINENT='Asia';
